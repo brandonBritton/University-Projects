@@ -1,0 +1,33 @@
+.current-hotspots-column-left {
+    float: left;
+    width: 35%; 
+}
+
+.current-hotspots-column-right {
+    float: left;
+    width: 50%; 
+}
+
+#current-hotspot-upper-body {
+    margin-left: 21%;
+    margin-right: 10%; 
+    margin-top: 1%;
+}
+
+#current-hotspot-wrapper {
+    margin-left: 20%;
+    width: 70%;
+    padding: 10px;
+}
+
+@media screen and (max-width:1600px) {
+    .current-hotspots-column-left {
+        float: left;
+        width: 100%; 
+    }
+    
+    .current-hotspots-column-right {
+        float: left;
+        width: 100%; 
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <title>Algorithm Visualization Tool</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="headerLabel">
+      <h2>🤖 Algorithm Visualization Tool</h2>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="paramBar">
+      <div class="navRow">
+        <p class="navLabel">Test Parameters</p>
+      </div>
+
+      <div class="inputGroup">
+        <span class="inputGroupText inputGroupName">Enter Failure Rate:</span>
+        <input type="text" class="formControl" id="failPct">
+        <span class="inputGroupText inputGroupUnits">%</span>
+      </div>
+
+      <div class="inputGroup">
+        <span class="inputGroupText inputGroupName">Enter Display Size:</span>
+        <input type="text" class="formControl" id="edgeSize">
+        <span class="inputGroupText inputGroupUnits">px</span>
+        <span class="noteText"><i>
+            <b>NOTE:</b> Valid Display Sizes are above <b>300px</b> and below <b>800px</b>. If a value is provided
+            outside the valid range, or if the field is left blank, then a default value of <b>500px</b> will be used.
+            <br>Valid Failure Rates are greater than <b>0%</b> and less than or equal to <b>100%</b>. If a value is
+            provided outside the valid range, or if the field is left blank, then a default value of <b>1%</b> will be
+            used.
+            <br>For any failure rates below <b>0.1%</b>, real-time algorithm visualisation will be disabled to
+            improve performance and the results will be displayed at the end.
+            <br><br><b>WARNING:</b> Failure rates lower than <b>0.001%</b> will take a very long time
+            to compute on most machines.</i></span>
+      </div>
+
+      <br>
+      <div class="switchBox">
+        <span style="font-size: medium;"><b>Manually advance steps:</b></span>
+        <div>
+          <label class="switch">
+            <input type="checkbox" id="manual" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <button class="button buttonSuccess" onclick="driver()">Start New Test</button>
+      <button class="button buttonNext" onclick="advance()" id="manualButton" disabled>> > > Next Test Case > >
+        ></button>
+      <br />
+
+      <div class="navRow">
+        <p class="navLabel">Compare Algorithm Speeds</p>
+      </div>
+      <div class="inputGroup">
+
+        <span class="inputGroupText inputGroupName">Number of tests:</span>
+        <input type="text" class="formControl" id="testInput"></input>
+
+        <button class="button buttonGo" onclick="resetInterfaceState()">Go!</button>
+        <span class="noteText">
+          <i><b>NOTE:</b> If the 'Number of tests' field is left blank or not a valid number, then a default value of
+            <b>1000</b> will be used. The 'Manually advance steps' feature is not available when comparing algorithm
+            speeds.</i>
+        </span>
+      </div>
+      <br />
+      <div class="navLabel" style='font-size:50px;'>🛠️</div>
+    </div>
+
+    <div id="artContainer" class="canvasWrapper"></div>
+    <div id="rtContainer" class="canvasWrapper"></div>
+  </div>
+</body>
+
+</html>

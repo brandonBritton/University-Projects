@@ -1,0 +1,17 @@
+.register-radio{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.register-business-column {
+    float: left;
+    width: 50%;
+    text-align: center;  
+}
+
+@media screen and (max-width:1400px) {
+    .register-business-column {
+        width: 100%;
+    }
+}

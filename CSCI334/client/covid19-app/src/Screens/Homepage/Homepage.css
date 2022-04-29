@@ -1,0 +1,53 @@
+.homepage-section-banner {
+    background-image: linear-gradient(to right, #FDC500 ,  white);
+    margin-bottom: 1%;
+}
+
+.homepage-section-banner-h1 {
+    color: #0E5F76; 
+    padding-left: 3%; 
+    margin-bottom: 0px;
+}
+
+.homepage-main-banner {
+    color: #0E5F76; 
+    padding-left: 1%;
+    margin-bottom: 0px;
+}
+
+.homepage-banner-image {
+    width: 100%; 
+    height: 200px,;
+    min-width: 1280px;
+}
+
+.gutter-row {
+    padding-left: 3%;
+}
+
+.card-shadow-hoverable {
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+				0 3px 1px -2px rgba(0, 0, 0, 0.12),
+				0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+				0 3px 1px -2px rgba(0, 0, 0, 0.12),
+				0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	transition: -webkit-box-shadow ease-in-out .1s,
+				box-shadow ease-in-out .1s,
+				transform ease-in-out .15s,
+				z-index linear .15s;
+}
+
+.card-shadow-hoverable:hover,
+.card-shadow-hoverable:focus,
+.card-shadow-hoverable:active {
+	transform: scale(1.045);
+	-webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.14),
+				0 3px 15px -2px rgba(0, 0, 0, 0.12),
+				0 1px 19px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.14),
+				0 3px 15px -2px rgba(0, 0, 0, 0.12),
+				0 1px 19px 0 rgba(0, 0, 0, 0.2);
+	outline: none;
+	z-index: 99;
+}

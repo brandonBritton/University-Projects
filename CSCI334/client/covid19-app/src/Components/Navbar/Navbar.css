@@ -1,0 +1,41 @@
+.navbar-menuitem-text {
+    padding-bottom: 3px;
+}
+
+.ant-menu {
+    font-size: 18px;
+    color: #F9E18A;
+}
+
+.ant-menu-horizontal {
+      border-bottom: 0px;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-item:hover, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-submenu:hover, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-item-active, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-submenu-active, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-item-open, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-submenu-open, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-item-selected, 
+.ant-menu-horizontal:not(.ant-menu-dark) > 
+.ant-menu-submenu-selected {
+    color: #FDC500;
+    border-bottom: 2px solid #FDC500;
+}
+
+.ant-menu-submenu-popup > .ant-menu > .ant-menu-item:hover {
+    color: #FDC500;;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+    color:  #F9E18A;
+    background-color: #0E5F76;
+}

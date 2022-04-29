@@ -1,0 +1,8 @@
+const USER_TYPE = {
+    GENERAL: "GENERAL",
+    HEALTH: "HEALTH",
+    BUSINESS:"BUSINESS",
+    UNREGISTERED: "UNREGISTERED"
+}
+
+module.exports = USER_TYPE;

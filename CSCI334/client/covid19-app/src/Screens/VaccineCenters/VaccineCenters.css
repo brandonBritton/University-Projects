@@ -1,0 +1,35 @@
+.vaccine-center-column-left {
+    float: left;
+    width: 50%; 
+}
+
+#vaccine-center-upper-body {
+    margin-left: 21%;
+    margin-right: 10%; 
+    margin-top: 1%;
+}
+
+#vaccine-center-wrapper {
+    margin-left: 20%;
+    width: 70%;
+    padding: 10px;
+}
+
+@media screen and (max-width:1600px) {
+    .vaccine-center-column-left {
+        float: left;
+        width: 100%; 
+    }
+}
+
+#vaccine-center-table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 20px;
+}
+
+table#vaccine-center-table td{
+    text-align: left;
+    vertical-align: top;
+    padding: 8px;
+}

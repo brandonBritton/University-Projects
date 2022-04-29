@@ -1,0 +1,15 @@
+.DS_Store
+<<<<<<< HEAD
+=======
+node_modules
+<<<<<<< HEAD
+>>>>>>> develop
+node_modules
+node_modules
+node_moduels/
+.env/
+=======
+.idea
+build
+/users_raw.csv
+>>>>>>> develop-backend
